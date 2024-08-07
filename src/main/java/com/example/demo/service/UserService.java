@@ -11,4 +11,5 @@ public interface UserService {
 
     User load(int id);
 
+    User loadByName(String name);
 }

@@ -18,4 +18,10 @@ public class DemoController {
         User user = userService.load(2);
         return ResponseEntity.ok(user);
     }
+
+    @RequestMapping("/hello2")
+    public ResponseEntity<User> test2() {
+        User user = userService.loadByName("jim");
+        return ResponseEntity.ok(user);
+    }
 }
